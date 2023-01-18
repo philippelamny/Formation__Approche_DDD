@@ -1,35 +1,30 @@
-## Demarrer le projet avec docker
+# Demarrer le projet avec docker
 
->> git clone https://github.com/philippelamny/Formation__Approche_DDD.git
+> git clone https://github.com/philippelamny/Formation__Approche_DDD.git
 
+> cd Formation__Approche_DDD
 
->> cd Formation__Approche_DDD
+> docker-compose build
 
+> docker-compose run todolist composer install
 
->> docker-compose build
+> cp todolist/.env.example todolist/.env
 
->> docker-compose run todolist composer install
+> docker-compose run todolist php artisan key:generate
 
+> docker-compose down
 
->> cp todolist/.env.example todolist/.env
+> docker-compose up -d
 
-
->> docker-compose run todolist php artisan key:generate
-
-
->> docker-compose down
-
-
->> docker-compose up -d
-
-
-## Command utile
+# Command utile
 
 Vérifier la page :  http://localhost:8000
 
-
 Lancer les tests avec le mode verbose :  docker-compose exec todolist php artisan test
 
-
 Connaitre toutes les routes disponibles : docker-compose exec todolist php artisan route:list
+
+# FORMATION INFORMELLE
+
+## [CONCEPT DE BASE DE L'APPROCHE Domain Driven Design](BASE_DDD.md)
 
