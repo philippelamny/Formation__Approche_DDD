@@ -1,6 +1,6 @@
 <?php
 
-namespace App\TodoList\Application\Gateway;
+namespace App\TodoList\Infrastructure\Gateway;
 
 use App\TodoList\Application\Contract\TodoListRepository;
 use App\TodoList\Domain\TodoItem;

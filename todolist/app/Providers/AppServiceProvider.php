@@ -3,7 +3,7 @@
 namespace App\Providers;
 
 use App\TodoList\Application\Contract\TodoListRepository;
-use App\TodoList\Application\Gateway\AwsTodoListRepository;
+use App\TodoList\Infrastructure\Gateway\AwsTodoListRepository;
 use Illuminate\Support\ServiceProvider;
 
 class AppServiceProvider extends ServiceProvider
